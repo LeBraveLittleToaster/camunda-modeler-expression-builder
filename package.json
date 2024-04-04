@@ -29,11 +29,17 @@
     "camunda-modeler-plugin-helpers": "^5.1.0",
     "camunda-modeler-webpack-plugin": "^0.1.0",
     "classnames": "^2.3.2",
+    "css-loader": "^6.11.0",
     "eslint": "^8.54.0",
     "eslint-plugin-bpmn-io": "^1.0.0",
     "npm-run-all": "^4.1.5",
     "react-svg-loader": "^3.0.3",
+    "style-loader": "^3.3.4",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "reactflow": "^11.11.0"
   }
 }

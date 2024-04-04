@@ -24,7 +24,11 @@ module.exports = {
       {
         test: /\.svg$/,
         use: 'react-svg-loader'
-      }
+      },
+      {
+        test: /\.(css)$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ]
   },
   devtool: 'cheap-module-source-map',
