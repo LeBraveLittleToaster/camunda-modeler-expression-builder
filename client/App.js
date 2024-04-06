@@ -52,13 +52,12 @@ const DnDFlow = () => {
         return;
       }
 
-
       const position = reactFlowInstance.screenToFlowPosition({
         x: event.clientX,
         y: event.clientY,
       });
 
-      const label = (typeof type === "default") ? type.toString() + " node" : "math node"
+      const label =  type != "default" ? type.toString() + " node" : "math node"
       const newNode = {
         id: getId(),
         type,
@@ -75,7 +74,7 @@ const DnDFlow = () => {
     <div className="dndflow">
       <ReactFlowProvider>
         <div className="reactflow-wrapper" ref={reactFlowWrapper}>
-          <div style={{height: 960}}>
+          <div style={{height: window.innerHeight / 1.2}}>
             <ReactFlow
               nodes={nodes}
               edges={edges}

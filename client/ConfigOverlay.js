@@ -14,11 +14,13 @@ export default function ConfigOverlay({ anchor, initValues, onClose }) {
   const onSubmit = () => onClose({ enabled, interval });
 
   // we can use the built-in styles, e.g. by adding "btn btn-primary" class names
+
+
+
   return (
-    <Overlay anchor={anchor} onClose={onClose} offset={OFFSET} minWidth={1280} minHeight={680}>
+    <Overlay anchor={anchor} onClose={onClose} offset={OFFSET} minWidth={1280} minHeight={600}>
         <DnDFlow />
     </Overlay >
-
   );
 }
 
